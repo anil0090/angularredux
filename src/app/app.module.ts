@@ -9,13 +9,13 @@ import { PersondetailComponent } from 'src/persondetail/persondetail.component';
 import { NgReduxModule, NgRedux, DevToolsExtension } from 'ng2-redux';
 import { IAppStore } from 'src/app/models/store';
 import { rootReducer } from 'src/app/reducer';
-
+import { HttpModule } from '@angular/http';
 @NgModule({
   declarations: [
     AppComponent, PersonComponent, PersondetailComponent
   ],
   imports: [
-    BrowserModule, FormsModule, routing, NgReduxModule
+    BrowserModule, FormsModule, routing, NgReduxModule, HttpModule
   ],
   providers: [],
   bootstrap: [AppComponent]

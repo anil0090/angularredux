@@ -13,3 +13,21 @@
       </tr>
   </tbody>
 </table> 
+
+<br/>
+
+
+<table>
+    <thead>
+        <tr>
+            <td>icon</td>
+            <td>title</td>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let menu of menus">
+            <td>{{menu.menu_icon}}</td>
+            <td>{{menu.menu_title}}</td>
+        </tr>
+    </tbody>
+  </table> 
